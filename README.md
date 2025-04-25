@@ -11,5 +11,6 @@
 ## [page](./page.js)
 
 - window.tm.page.text 获取元素的文本
+- window.tm.page.textOf 获取元素的文本
 - window.tm.page.number 获取元素的数字
 - window.tm.page.click 点击元素

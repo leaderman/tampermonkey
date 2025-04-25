@@ -11,6 +11,15 @@ window.tm.page.text = function (selector) {
 };
 
 /**
+ * 获取元素的文本
+ * @param {Element} el 元素
+ * @returns {string} 文本
+ */
+window.tm.page.textOf = function (el) {
+  return el?.textContent.trim() || "";
+};
+
+/**
  * 获取元素的数字
  * @param {string} selector 选择器
  * @returns {number} 数字或 NaN
