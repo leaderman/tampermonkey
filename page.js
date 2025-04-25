@@ -1,3 +1,6 @@
+window.tm = window.tm || {};
+window.tm.page = window.tm.page || {};
+
 /**
  * 获取元素的文本内容
  * @param {string} selector 选择器

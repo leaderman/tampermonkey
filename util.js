@@ -1,3 +1,6 @@
+window.tm = window.tm || {};
+window.tm.util = window.tm.util || {};
+
 /**
  * 睡眠
  * @param {number} ms 睡眠时间，单位：毫秒
