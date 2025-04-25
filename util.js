@@ -59,10 +59,11 @@ window.tm.util.getDatetime = function () {
  * 判断当前时间是否在指定时间范围内，开始时间和结束时间必须位于同一天内
  * @param {string} start 开始时间，格式：HH:mm:ss，闭区间
  * @param {string} end 结束时间，格式：HH:mm:ss，闭区间
+ * @param {string} [time] 当前时间，格式：HH:mm:ss
  * @returns {boolean} 如果当前时间在指定时间范围内，返回 true，否则返回 false
  */
-window.tm.util.timeBetween = function (start, end) {
-  const time = window.tm.util.getTime();
+window.tm.util.timeBetween = function (start, end, time) {
+  time = time || window.tm.util.getTime();
 
   return start <= time && time <= end;
 };
