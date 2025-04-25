@@ -66,3 +66,14 @@ window.tm.util.timeBetween = function (start, end) {
 
   return start <= time && time <= end;
 };
+
+/**
+ * 将文本转换为数字
+ * @param {string} text 文本
+ * @returns {number} 数字
+ */
+window.tm.util.number = function (text) {
+  text = text.trim();
+
+  return text ? Number(text) : NaN;
+};

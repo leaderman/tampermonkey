@@ -25,10 +25,9 @@ window.tm.page.textOf = function (el) {
  * @returns {number} 数字或 NaN
  */
 window.tm.page.number = function (selector) {
-  let text = window.tm.page.text(selector);
-  text = text.trim();
+  const text = window.tm.page.text(selector);
 
-  return text ? Number(text) : NaN;
+  return window.tm.util.number(text);
 };
 
 /**

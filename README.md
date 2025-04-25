@@ -7,6 +7,7 @@
 - window.tm.util.getTime 获取当前时间
 - window.tm.util.getDatetime 获取当前日期和时间
 - window.tm.util.timeBetween 判断当前时间是否在指定时间范围内
+- window.tm.util.number 将文本转换为数字
 
 ## [page](./page.js)
 
