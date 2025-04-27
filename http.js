@@ -81,12 +81,8 @@ window.tm.http.get = function (url, headers = {}) {
  * @returns {Promise<any>} 请求结果
  */
 window.tm.http.post = function (url, data, headers = {}) {
+  console.log(`${url} ${JSON.stringify(data)}`);
   return new Promise((resolve, reject) => {
-    // 检查 data 参数
-    if (data === undefined || data === null) {
-      return reject(new Error("请求体不能为空"));
-    }
-
     headers = {
       "Content-Type": "application/json",
       ...headers,
