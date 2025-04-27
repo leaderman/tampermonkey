@@ -85,7 +85,7 @@ window.tm.http.post = function (url, data, headers = {}) {
     GM_xmlhttpRequest({
       method: "POST",
       url,
-      data,
+      data: JSON.stringify(data),
       headers,
       responseType: "json",
       onload: function (response) {
